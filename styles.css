@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', cursive, sans-serif;
+}
+
+header {
+    background-image: url('images/bg-img.jpg');
+    color: whitesmoke;
+    padding: 1em 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header > h2 {
+    padding: 0;
+    margin: 5px;
+}
+
+header > p {
+    margin-top: 15px;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+    font-size: smaller;
+}
+
+.orderIcon {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    height: 5rem;
+}
+
+.plus-sign {
+    font-size: 1rem;
+    border: .5px solid rgba(128, 128, 128, 0.479);
+    border-radius: 50px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 18px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.order-details {
+    margin-right: auto;
+    margin-left: 1em;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.counter > p {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.your-order h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-btn {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #16DB99;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.payment-form {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    top: 25vh;
+    background-color: white;
+    margin: 2em;
+    box-shadow: 1px 1px 50px 1px rgba(0, 0, 0, 0.514);
+}
+
+.payment-form > form {
+    display: grid;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.61);
+    padding: 2rem;
+    gap: 5px;
+}
+
+.payment-form > form > input {
+    padding: 1rem;
+}
+
+.payment-form > form > button {
+    margin-top: 15px;
+    background-color: #16DB99;
+    color: whitesmoke;
+    padding: 1rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.lastText {
+    text-align: center;
+    background-color: #16db9934;
+    padding: 2em 0;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 700px){
+    body {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        width: 700px;
+    }
+    main {
+        width: 700px;
+    }
+
+    .payment-form {
+        width: 700px;
+        right: auto;
+        left: auto;
+    }
+}
